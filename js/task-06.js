@@ -9,7 +9,7 @@ function tryQuantityOfSymbols(symbol) {
     if (symbol.currentTarget.value.length === 6) {
         return lostFocus.classList.add('valid');
     }
-    if (symbol.currentTarget.value.length > 6 || symbol.currentTarget.value === ""){
+    if (symbol.currentTarget.value.length > 0 || symbol.currentTarget.value === ""){
         return lostFocus.classList.add('invalid');
     }
 }
