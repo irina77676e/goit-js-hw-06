@@ -12,6 +12,11 @@ function handleSubmit(event) {
 
     const userAcount = { email: email.value, password: password.value };
     console.log("userAcount", userAcount);
+
+    document.addEventListener('submit', (event) => { 
+    event.preventDefault(); 
+    event.target.reset(); 
+});
 } 
 
 
